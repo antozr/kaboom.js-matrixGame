@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background-color: black;
+}
+
+
+// canvas{
+//     margin: 15vh 0 0  20vw;
+// }
+
+#canvas1{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+
+}
+#canvas2{
+    margin: 15vh 0 0  20vw;
+
+}
+
+.sect{
+
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    &__title{
+        font-family: monospace;
+        color: #ffffff;
+        font-size: 28px;
+        text-transform: capitalize;
+        color: #62BB71;
+        text-shadow: 0px 0px 66px #c1f8ca;
+        text-shadow: 0px 0px 16px #657F6B;
+
+    }
+
+    &__list{
+        list-style: none;
+
+    }
+    &__el{
+        font-family: monospace;
+        font-size: 18px;
+        color: #62BB71;
+        text-shadow: 0px 0px 66px #c1f8ca;
+        display: flex;
+        flex-direction: row;
+    }
+    &__none{
+        display: none;
+    }
+}
+
+//
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+// body{
+//     overflow: hidden;
+//     background-color: black;
+// }
+// canvas{
+//     position: absolute;
+//     top:0;
+//     left: 0;
+
+// }
+.box__box{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.box__pill{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    min-width: 250px;
+    max-width: 450px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box__red, .box__blue{
+    padding: 0 30px;
+    color: rgba(0, 240, 0, 1);
+    animation: pillGo 20s ease-in;
+    
+}
+.box__red{
+    animation: pillGo 20s ease-in;
+    
+}
+.box__red:hover{
+    cursor: help;
+    transform: rotateZ(360deg);
+    transition: 6s ease-out;
+}
+.animationFull{
+    animation: pillOpacity 12s infinite ;
+}
+.box__txt{
+    font-family: monospace;
+    font-size: 48px;
+    line-height: 1;
+    height: 78px;
+    text-align: center;
+    color: #62BB71;
+    text-shadow: 0px 0px 66px #c1f8ca;
+    text-shadow: 0px 0px 16px #657F6B;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: 4px solid #657F6B;
+    background-color: #657F6B25;
+    animation: pillGo 4s ease-in;
+}
+
+@keyframes pillGo {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes pillOpacity {
+    from{
+        opacity: 0.1;
+        
+    }
+    40%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.2;
+        
+    }
+    96%{
+        opacity: 0.8;
+    }
+    to{
+        opacity: 0.01;
+        
+    }
+}

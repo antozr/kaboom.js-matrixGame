@@ -1,0 +1,8 @@
+node_modules/
+
+.cache/
+# End of https://www.gitignore.io/api/sass,node,macos,windows,phpstorm,sublimetext,visualstudiocode
+
+### Custom ###
+dist/
+
